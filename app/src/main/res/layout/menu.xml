@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Guess Who"
+        android:id="@+id/menuTitleTV"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_color"
+        />
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/background_pic"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                android:id="@+id/tabPeople"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="275dp"
+                    android:layout_height="275dp"
+                    android:src="@mipmap/default_picmenu"
+                    android:id="@+id/IVHistorical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Test your knowledge of Ancient and Modern history."
+                    android:id="@+id/TVhist"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="25dp"
+                    android:textColor="@color/text_color"
+                    />
+
+                <com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/bHistPlay"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#000000"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@color/button_color"
+                    android:text="Play"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="PlayGame" />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tabemoji"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="225dp"
+                        android:layout_height="225dp"
+                        android:src="@mipmap/default_picmenu"
+                        android:id="@+id/IVemoji"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Do you know what messages you're sending?"
+                        android:id="@+id/TVemoji"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp"
+
+                        android:textColor="@color/text_color"
+                        />
+
+                    <com.gc.materialdesign.views.ButtonRectangle
+                        android:id="@+id/bemojiPlay"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#000000"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/button_color"
+                        android:text="Play"
+                        android:layout_gravity="center_horizontal"
+                        android:onClick="PlayGameEmoji" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabmore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:src="@mipmap/default_picmenu"
+                        android:id="@+id/IVMore"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="More categories coming soon..."
+                        android:id="@+id/TVmore"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/text_color"/>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+</LinearLayout>

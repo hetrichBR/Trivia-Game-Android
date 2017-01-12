@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b0066">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Correct!"
+        android:id="@+id/TVcorrect"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_color"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/IVcorrect"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/correct"
+        android:layout_marginTop="15dp"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/bcorrect"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/button_color"
+        android:text="Close"
+        android:layout_gravity="center_horizontal"
+         />
+</LinearLayout>
