@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.het.soreal.sorealgame" >
+    package="com.b-rad.pocketgames.trivia" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -39,7 +39,7 @@
             android:label="Game"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.het.soreal.sorealgame.MAINACTIVITY" />
+                <action android:name="com.b-rad.pocketgames.trivia.MAINACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
